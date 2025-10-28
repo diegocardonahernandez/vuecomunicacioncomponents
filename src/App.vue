@@ -1,16 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <PadreNumeros/>
+  <ComicsComponent/>
 </template>
 
 <script>
-import PadreNumeros from './components/PadreNumeros.vue'
+import ComicsComponent from './components/ComicsComponent.vue'
 
 
 export default {
   name: 'App',
   components: {
-    PadreNumeros
+    ComicsComponent
   }
 }
 </script>
