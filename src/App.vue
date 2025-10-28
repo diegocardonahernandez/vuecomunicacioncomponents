@@ -1,16 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <ComicsComponent/>
+  <CheckboxSuma/>
 </template>
 
 <script>
-import ComicsComponent from './components/ComicsComponent.vue'
+import CheckboxSuma from './components/CheckboxSuma.vue'
 
 
 export default {
   name: 'App',
   components: {
-    ComicsComponent
+    CheckboxSuma
   }
 }
 </script>
