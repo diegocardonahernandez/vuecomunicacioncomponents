@@ -1,7 +1,10 @@
 <template>
   <div>
     <h1 style="color: darkblue">PADRE DEPORTES</h1>
-   <HijoDeportes :deportes="deportes"/>
+    <h2 style="bakcgroubd-color: yellow;" v-if="favorito">
+      Su deporte Favorito es {{favorito}}
+    </h2>
+   <HijoDeportes :deportes="deportes" v-on:seleccionarFavorito="seleccionarFavorito"/>
   </div>
 </template>
 
@@ -16,7 +19,14 @@ export default {
   data() {
     return {
       deportes: ["Futbol", "Tenis", "Cricket", "Padel"],
+      favorito: null
     };
   },
+  methods: {
+    seleccionarFavorito(deporteFav){
+      console.log("Yo sou tu padre")
+      this.favorito = deporteFav
+    }
+  }
 };
 </script>
